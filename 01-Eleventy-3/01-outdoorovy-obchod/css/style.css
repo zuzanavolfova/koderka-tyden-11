@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  background: #644122 url(/images/hlavicka.jpg) no-repeat center/cover;
+  padding: 30px;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 0 4px rgba(0, 0, 0, 0.25)
+}
+
+.menu {
+  background-color: #532104;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu__item:not(:last-child) {
+  border-right: 1px solid  #5c351f;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px 30px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu__item--active .menu__link {
+  background-color: black;
+  color: yellow;
+}
+
+.menu__link:hover, .menu__link:focus {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  margin: 30px 0;
+  padding: 30px;
+  border: 3px solid #b9b9b9;
+  overflow: auto;
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.image--left {
+  max-width: 400px;
+  float: left;
+  margin: 0 30px 15px 0;
+}
+
+.image--right {
+  max-width: 400px;
+  float: right;
+  margin: 0 0 15px 30px;
+}
+
+.footer {
+  background-color: #e5e5e5;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.article__title  {
+  font-size: 48px;
+  margin: 0;
+}
+
+.article__meta {
+  color: silver;
+}
+
+.article__content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.article__perex {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article__image {
+  display: block;
+  width: 100%;
+}
+
