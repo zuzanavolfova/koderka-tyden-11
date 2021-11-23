@@ -6,7 +6,6 @@ Tento týden se budemě věnovat těmto oblastem:
 - **Markdown** - popíšeme si *Markdown* - extreémně populární formát pro tvorbu obsahu
 - **Eleventy** - ukážeme si, jaké další možnosti nám nabízí šablonovací jazyk Nunjucks, a vyzkoušíme si práci s kolekcemi pro tvorbu novinek, blogů, apod.
 - **Checkbox trik a hamburger menu** - jak funguje tzv. checkbox trik a jak s ním vyrobit hamburger menu bez nutnosti použít JavaScript
-- **Open Graph** - jak přidat do stránky speciální data pro hezké sdílení na Facebooku, Twitteru, apod.
 
 
 ## Stažení podkladů
