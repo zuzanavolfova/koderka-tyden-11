@@ -8,3 +8,60 @@ body {
 }
 
 /* ------------------------------------- */
+
+.check {
+	/* 1. varianta:
+	 display: none; - může být problém ve formulářích, že se hodnota neodešle*/
+	/* 2. varianta
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0; zůstává prázdná mezera po checkboxu, nutno ještě dostylovat */
+	position: absolute;
+	left: -9999px;;
+	/* dává se mu position absolute a left -9999px -> odsune ho hodne daleko */
+}
+
+/* label {
+	display: inline-block;
+border: 1px solid gray;
+padding: 10px;
+background-color: rgb(234, 169, 65);
+border-radius: 30px;
+}
+.boxik {
+	display: inline-block;
+	width: 0.6em;
+	height: 0.6em;
+	border: 1px solid blue;
+	background-color: yellow;
+	border-radius: 50%;
+} */
+/* .check:checked + label .boxik{
+	background-color: black;
+} */
+
+
+/* vyuziti pro caste otazky*/
+
+.box {
+	border: 1px solid black;
+	padding: 20px;
+	background-color: lightcyan;
+}
+
+.box label {
+	font-size: 24px;
+	font-weight: bold;
+	display: block;
+}
+
+.box .text {
+	margin: 20px;
+	display: none;
+}
+
+.check:checked ~ .text {
+	display: block;
+}
+
